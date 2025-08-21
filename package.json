@@ -41,7 +41,7 @@
     "react-native-reanimated": "~3.17.4",
     "react-native-safe-area-context": "5.4.0",
     "react-native-screens": "~4.11.1",
-    "react-native-web": "~0.20.0",
+    "react-native-web": "^0.20.0",
     "react-native-webview": "13.13.5",
     "expo-dev-client": "~5.2.4"
   },
@@ -56,15 +56,19 @@
   "overrides": {
     "ajv": "^8.17.1",
     "json-schema-traverse": "^1.0.0",
-
-    "ajv-keywords": { "ajv": "^8.17.1" },
-    "schema-utils": { "ajv": "^8.17.1" },
-
-    "@eslint/eslintrc": { "ajv": "6.12.6" }
+    "ajv-keywords": {
+      "ajv": "^8.17.1"
+    },
+    "schema-utils": {
+      "ajv": "^8.17.1"
+    },
+    "@eslint/eslintrc": {
+      "ajv": "6.12.6"
+    }
   },
-
-  "engines": { "node": ">=18 <21" },
+  "engines": {
+    "node": ">=18 <21"
+  },
   "packageManager": "npm@10.7.0",
-
   "private": true
 }

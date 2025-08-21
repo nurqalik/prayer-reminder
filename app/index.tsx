@@ -369,14 +369,14 @@ export default function App() {
           onPress={clearSchedules}
         />
       </View>
-      <View style={styles.buttons}>
+      {/* <View style={styles.buttons}>
         <Button title="Test next minute" onPress={() => testInSeconds(100)} />
       </View>
 
       <Text style={styles.note}>
         Notes: On Android 12+, enable “Alarms & reminders” in system settings
         for exact delivery. The app still works without it.
-      </Text>
+      </Text> */}
       <Text style={styles.note}>&copy; Roe 2025</Text>
     </ScrollView>
   );

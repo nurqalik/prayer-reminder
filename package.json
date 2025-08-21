@@ -53,5 +53,18 @@
     "eslint-config-expo": "~9.2.0",
     "typescript": "~5.8.3"
   },
+  "overrides": {
+    "ajv": "^8.17.1",
+    "json-schema-traverse": "^1.0.0",
+
+    "ajv-keywords": { "ajv": "^8.17.1" },
+    "schema-utils": { "ajv": "^8.17.1" },
+
+    "@eslint/eslintrc": { "ajv": "6.12.6" }
+  },
+
+  "engines": { "node": ">=18 <21" },
+  "packageManager": "npm@10.7.0",
+
   "private": true
 }

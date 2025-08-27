@@ -1,10 +1,29 @@
 {
   "expo": {
+    "web": {
+      "bundler": "metro"
+    },
     "name": "Prayer Reminder",
     "slug": "prayer-reminder",
     "scheme": "pray",
+    "icon": "./assets/images/adaptive-icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "backgroundColor": "#ffffff",
+      "imageWidth": 200,
+      "resizeMode": "contain"
+    },
+    "notification": {
+      "icon": "./assets/images/icon.png",
+      "color": "#ffffff",
+      "defaultChannel": "default",
+      "imageWidth": 200,
+      "resizeMode": "contain",
+      "enableBackgroundRemoteNotifications": true
+    },
     "ios": {
-      "supportsTablet": false,
+      "supportsTablet": true,
       "infoPlist": {
         "NSLocationWhenInUseUsageDescription": "We use your location to calculate accurate prayer times.",
         "NSUserTrackingUsageDescription": "We only use notifications to remind you of prayer times.",
@@ -12,7 +31,10 @@
       },
       "bundleIdentifier": "com.prayer-reminder"
     },
-    "plugins": ["expo-notifications", "expo-task-manager", "expo-background-fetch"],
+    "plugins": [
+      "expo-task-manager",
+      "expo-background-fetch"
+    ],
     "android": {
       "permissions": [
         "ACCESS_COARSE_LOCATION",
@@ -21,6 +43,10 @@
         "WAKE_LOCK",
         "SCHEDULE_EXACT_ALARM"
       ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
       "useNextNotificationsApi": true,
       "package": "com.example.prayerreminder"
     },

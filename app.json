@@ -10,15 +10,13 @@
     "splash": {
       "image": "./assets/splash-icon-dark2.png",
       "backgroundColor": "#ffffff",
-      "imageWidth": 200,
-      "resizeMode": "contain"
+      "imageWidth": 200
     },
     "notification": {
       "icon": "./assets/icon.png",
       "color": "#ffffff",
       "defaultChannel": "default",
       "imageWidth": 96,
-      "resizeMode": "contain",
       "enableBackgroundRemoteNotifications": true
     },
     "ios": {

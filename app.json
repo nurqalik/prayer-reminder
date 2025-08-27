@@ -8,10 +8,10 @@
     "scheme": "pray",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/splash-icon-dark.png",
+      "image": "./assets/splash-icon-dark2.png",
       "backgroundColor": "#ffffff",
       "imageWidth": 200,
-      "resizeMode": "cover"
+      "resizeMode": "contain"
     },
     "notification": {
       "icon": "./assets/icon.png",

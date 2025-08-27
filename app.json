@@ -6,19 +6,18 @@
     "name": "Prayer Reminder",
     "slug": "prayer-reminder",
     "scheme": "pray",
-    "icon": "./assets/images/adaptive-icon.png",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/splash-icon.png",
+      "image": "./assets/splash-icon-dark.png",
       "backgroundColor": "#ffffff",
       "imageWidth": 200,
-      "resizeMode": "contain"
+      "resizeMode": "cover"
     },
     "notification": {
-      "icon": "./assets/images/icon.png",
+      "icon": "./assets/icon.png",
       "color": "#ffffff",
       "defaultChannel": "default",
-      "imageWidth": 200,
+      "imageWidth": 96,
       "resizeMode": "contain",
       "enableBackgroundRemoteNotifications": true
     },
@@ -29,7 +28,10 @@
         "NSUserTrackingUsageDescription": "We only use notifications to remind you of prayer times.",
         "ITSAppUsesNonExemptEncryption": false
       },
-      "bundleIdentifier": "com.prayer-reminder"
+      "bundleIdentifier": "com.prayer-reminder",
+      "icon": {
+        "light": "./assets/ios-light,png"
+      }
     },
     "plugins": [
       "expo-task-manager",
@@ -44,11 +46,11 @@
         "SCHEDULE_EXACT_ALARM"
       ],
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
       "useNextNotificationsApi": true,
-      "package": "com.example.prayerreminder"
+      "package": "com.prayerreminder"
     },
     "extra": {
       "eas": {

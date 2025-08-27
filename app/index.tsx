@@ -472,7 +472,7 @@ export default function App() {
         {loading ? (
           <Loader label='Loading...' />
         ) : (
-          <View className="flex flex-row gap-x-8 items-center justify-end px-8">
+          <View className="flex flex-row gap-x-8 items-center justify-end px-8 py-2">
           <RefreshCw disabled={loading} onPress={manualRefresh} />
         <Trash2 onPress={clearSchedules} />
       </View>
